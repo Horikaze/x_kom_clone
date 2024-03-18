@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+import Navbar from "./components/main/Navbar";
 import "./globals.css";
-import Navbar from "./components/navbar/Navbar";
-import Menu from "./components/navbar/components/Menu";
 
 const lato = Lato({ weight: "400" });
 
@@ -22,7 +21,7 @@ export default function RootLayout({
         className={`${lato.className} px-3 md:px-6 xl:px-16 flex flex-col items-center`}
       >
         <Navbar />
-        <main className="size-full max-w-[1440px] pt-36">{children}</main>
+        <main className="size-full max-w-[1440px] pt-36 pb-40">{children}</main>
       </body>
     </html>
   );

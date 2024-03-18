@@ -1,5 +1,5 @@
 "use client";
-import useEmblaCarousel, { UseEmblaCarouselType } from "embla-carousel-react";
+import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import { SetStateAction, useCallback, useEffect, useState } from "react";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
@@ -59,7 +59,7 @@ export function EmblaCarousel() {
   console.log(selectedIndex);
   return (
     <section className="embla w-full relative">
-      <div className="relative drop-shadow-sm">
+      <div className="relative drop-shadow-card z-20">
         <div className="embla__viewport rounded-2xl" ref={emblaRef}>
           <div className="embla__container">
             {images.map((e, index) => (
@@ -92,7 +92,7 @@ export function EmblaCarousel() {
         </button>
       </div>
       <div className="flex px-5 w-full">
-        {images.map(({ img, title }, index) => (
+        {images.map(({ title }, index) => (
           <div
             onClick={() => {
               emblaApi!.scrollTo(index);
@@ -100,11 +100,11 @@ export function EmblaCarousel() {
             key={title}
             className={`
             ${index == selectedIndex ? "font-semibold" : "font-sans"}
-            relative w-full rounded-b-md flex items-center justify-center text-sm text-center px-2 bg-white hover:bg-[#ebebeb] transition-colors py-2.5 cursor-pointer`}
+            relative w-full rounded-b-md flex items-center justify-center text-sm text-center px-1 bg-white hover:bg-[#ebebeb] transition-colors py-2.5 cursor-pointer`}
           >
             <div
-              className={`absolute top-0 w-5/6 h-[4px] ${
-                selectedIndex == index ? "bg-black" : "bg-white"
+              className={`absolute top-0 w-5/6 h-[4px] bg-black ${
+                selectedIndex == index ? "block" : "hidden"
               } rounded-full`}
             />
             <p>{title}</p>

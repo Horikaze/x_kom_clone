@@ -5,6 +5,9 @@ const nextConfig = {
       {
         hostname: "cdn.x-kom.pl",
       },
+      {
+        hostname: "assets.x-kom.pl",
+      },
     ],
   },
 };

@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
-import RightTabs from "./components/RightTabs";
-import Search from "./components/Search";
-import Menu from "./components/Menu";
+import Search from "../sub/Search";
+import RightTabs from "../sub/RightTabs";
+import Menu from "../sub/Menu";
 export default function Navbar() {
   return (
-    <header className="fixed top-0 w-full flex flex-col items-center justify-center">
+    <header className="fixed top-0 w-full flex flex-col items-center justify-center z-30">
       <div className="bg-white h-[72px] max-w-[1440px] w-full flex items-center justify-start overflow-x-hidden px-3 md:px-6 xl:px-16 2xl:px-0">
         <div className="flex size-full items-center py-4">
           <div className="flex items-center justify-start">
