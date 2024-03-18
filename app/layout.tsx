@@ -22,7 +22,7 @@ export default function RootLayout({
         className={`${lato.className} px-3 md:px-6 xl:px-16 flex flex-col items-center`}
       >
         <Navbar />
-        <main className="size-full max-w-[1440px] pt-[72px]">{children}</main>
+        <main className="size-full max-w-[1440px] pt-36">{children}</main>
       </body>
     </html>
   );
