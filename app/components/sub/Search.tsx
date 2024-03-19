@@ -7,7 +7,7 @@ export default function Search() {
   const { change, status } = useSearch();
   return (
     <search
-      className={`size-full mx-8 ${
+      className={`size-full h-10 lg:mx-8 ${
         status ? "drop-shadow-focus" : ""
       } flex justify-end border items-center rounded-md gap-x-1 bg-white border-black/20`}
     >

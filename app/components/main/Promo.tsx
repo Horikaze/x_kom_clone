@@ -68,7 +68,7 @@ export default function Promo() {
           </div>
         </div>
       </div>
-      <div className="flex items-center group justify-between relative h-[72px] bg-[#f7f7f7] drop-shadow-card rounded-2xl py-5 px-10 overflow-hidden hover:drop-shadow-focus cursor-pointer">
+      <div className="flex flex-col lg:flex-row gap-y-20 items-center group justify-between relative bg-[#f7f7f7] drop-shadow-card rounded-2xl py-5 px-10 overflow-hidden hover:drop-shadow-focus cursor-pointer">
         <Image
           src={"/images/sales.png"}
           alt="salesLogo"

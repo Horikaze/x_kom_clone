@@ -11,6 +11,7 @@ import HotDeal from "./components/main/HotDeal";
 import { brandsSection } from "./constants/brandsSection";
 import BrandItem from "./components/sub/BrandItem";
 import Promo from "./components/main/Promo";
+import DesktopFooter from "./components/main/DesktopFooter";
 
 export default function Home() {
   return (
@@ -63,14 +64,7 @@ export default function Home() {
         ))}
       </Carousel>
       <Promo />
-      <div className="h-96 w-full">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis minima
-        laborum eligendi, quibusdam quas officiis odit modi accusantium
-        nesciunt! Culpa voluptate officia facere! Hic repellat maxime, ipsum
-        voluptas corporis soluta quibusdam, magnam culpa inventore doloremque
-        necessitatibus, in reiciendis voluptates doloribus. Carousel HotDeal
-        Promo
-      </div>
+      <DesktopFooter />
     </div>
   );
 }
