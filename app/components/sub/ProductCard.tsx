@@ -20,7 +20,7 @@ export default function ProductCard({ image, price, title }: ProductCardProps) {
         <div className="relative w-full aspect-[6/5]">
           <Image src={image} alt="product" fill className="object-center" />
         </div>
-        <p className="line-clamp-2">{title}</p>
+        <p className="line-clamp-2 font-sans">{title}</p>
       </div>
       <p className="pt-2 font-sans mt-auto">{price} zł</p>
       <div className="absolute bottom-2 right-2 p-1 rounded-lg group-hover:opacity-100 opacity-0 border transition-all border-[#119e00] text-[#119e00] hover:text-white hover:bg-[#119e00]">

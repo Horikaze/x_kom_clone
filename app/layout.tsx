@@ -4,7 +4,7 @@ import Navbar from "./components/main/Navbar";
 import "./globals.css";
 import MobileNavbar from "./components/main/MobileNavbar";
 
-const lato = Lato({ weight: "400" });
+const lato = Lato({ weight: "400", subsets: ["latin", "latin-ext"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
