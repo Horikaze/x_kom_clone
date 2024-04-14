@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaEnvelope,
   FaFacebook,
+  FaGithub,
   FaInstagram,
   FaPhone,
   FaWhatsapp,
-  FaX,
   FaXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
@@ -148,6 +149,13 @@ export default function DesktopFooter() {
         ))}
       </div>
       <p className="my-5 text-center text-sm">© x-kom 2002 - 2024</p>
+      <Link
+        href={"https://github.com/Horikaze"}
+        target="_blank"
+        className="text-center text-sm underline mb-5"
+      >
+        Site made by Horikaze
+      </Link>
     </div>
   );
 }

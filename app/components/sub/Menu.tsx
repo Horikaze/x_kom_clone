@@ -1,4 +1,4 @@
-import useScrollY from "@/app/useScrollY";
+import useScrollY from "@/app/components/hooks/useScrollY";
 import { BsCpu } from "react-icons/bs";
 import { CiDiscount1 } from "react-icons/ci";
 import {

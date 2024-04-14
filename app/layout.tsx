@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+import Link from "next/link";
+import { FaGithub } from "react-icons/fa6";
+import MobileNavbar from "./components/main/MobileNavbar";
 import Navbar from "./components/main/Navbar";
 import "./globals.css";
-import MobileNavbar from "./components/main/MobileNavbar";
 
 const lato = Lato({ weight: "400", subsets: ["latin", "latin-ext"] });
 
@@ -24,6 +26,13 @@ export default function RootLayout({
         <Navbar />
         <MobileNavbar />
         <main className="size-full max-w-[1440px] pt-36 pb-40">{children}</main>
+        <Link
+          href={"https://github.com/Horikaze/x_kom_clone"}
+          className="fixed bottom-2 right-2"
+          target="_blank"
+        >
+          <FaGithub className="size-8" />
+        </Link>
       </body>
     </html>
   );
