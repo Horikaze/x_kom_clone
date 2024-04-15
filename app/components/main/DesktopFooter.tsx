@@ -135,7 +135,7 @@ export default function DesktopFooter() {
           </div>
         </div>
       </div>
-      <div className="mt-16 flex h-10 gap-x-4 items-center justify-center">
+      <div className="mt-16 flex flex-wrap gap-x-4 items-center justify-center">
         {footerBrandsItems.map((e, index) => (
           <Image
             key={index}
@@ -144,7 +144,7 @@ export default function DesktopFooter() {
             width="0"
             height="0"
             sizes="100vw"
-            className="w-auto h-full"
+            className="w-auto h-10"
           />
         ))}
       </div>

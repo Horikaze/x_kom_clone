@@ -19,7 +19,7 @@ export default function HotDeal() {
     <div className="flex w-full gap-x-8">
       <div className="flex flex-col relative lg:w-1/3 gap-y-6 min-w-[400px] w-full text-center">
         <div className="size-full flex flex-col gap-y-5 rounded-2xl border-2 border-[#1a1a1a] p-6">
-          <p className="font-semibold text-2xl text-start">Cum</p>
+          <p className="font-semibold text-2xl text-start">Gorący strzał</p>
           <div className="aspect-square w-2/3 relative self-center">
             <Image
               src={
